@@ -7,11 +7,9 @@
 from flask import Flask, request, jsonify, abort
 from datetime import datetime
 import smtplib
-from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import os
-import sys
 
 # Funciones
 
