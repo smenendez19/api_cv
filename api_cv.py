@@ -1,11 +1,35 @@
 # API Curriculum de Santiago Menendez
 
-# Fuente: https://programando-python.github.io/posts/la-api-de-tu-curriculum-vitae/
+# Fuente de donde se baso: https://programando-python.github.io/posts/la-api-de-tu-curriculum-vitae/
 
 # Modulos
 
 from flask import Flask, request, jsonify, abort
 from datetime import datetime
+import smtplib
+from email.mime.application import MIMEApplication
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import os
+import sys
+
+# Funciones
+
+def send_mail_gmail(from_mail, password, to_mail, subject, message):
+    # SMTP Gmail
+    try:
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(from_mail, password)
+        msg = MIMEMultipart()
+        msg['From'] = from_mail
+        msg['To'] = to_mail
+        msg['Subject'] = subject
+        msg.attach(MIMEText(str(message, encoding="utf-8-sig"), 'plain'))
+        # Envio del mail
+        server.sendmail(msg['From'], to_mail, msg.as_string())
+    except BaseException as err:
+        abort(400, description=f"Error en el envio del mensaje al mail, detalle del error: {err}")
 
 # Inicio de aplicacion y configuraciones
 
@@ -72,9 +96,16 @@ def contacto():
     sys_date = datetime.now().strftime("%Y-%m-%d")
     if not msg:
         abort(400, description="Debe enviar su mensaje en el body del POST, por ejemplo: curl -X POST -d 'mensaje' url.")
-    print("MENSAJE DE CONTACTO: " + str(msg))
+    #print("MENSAJE DE CONTACTO: " + str(msg))
+    # Guardado del mensaje como archivo
     with open(f"messages/{sys_date}_message.txt", "wt", encoding="utf-8-sig") as f:
         f.write(str(msg, encoding="utf-8-sig"))
+    # Parametros .env
+    from_mail = os.environ.get("FROM_MAIL")
+    to_mail = os.environ.get("TO_MAIL")
+    password = os.environ.get("PASSWORD")
+    # Envio del mensaje por mail
+    send_mail_gmail(from_mail, password, to_mail, "Mensaje API CV", msg)
     return "Gracias por su mensaje."
 
 # Main
