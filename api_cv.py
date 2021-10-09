@@ -74,7 +74,7 @@ def cv():
             "lenguajes_programacion" : ["Python", "Bash", "Java SE", "C", "C++", "Javascript"],
             "cloud" : ["AWS", "GCP"],
             "bases_de_datos" : ["MySQL", "PostresSQL", "Hadoop/Hive", "Teradata", "Oracle SQL/PL SQL", "MongoDB"],
-            "web" : ["HTML", "CSS"],
+            "web" : ["HTML", "CSS", "Django"],
             "office" : ["Word", "Excel", "PowerPoint"],
             "otros" : ["Git", "PowerBI"]
         },
@@ -91,7 +91,7 @@ def cv():
 @app.route('/mensajes', methods=['POST'])
 def contacto():
     msg = request.get_data()
-    sys_date = datetime.now().strftime("%Y-%m-%d")
+    sys_date = datetime.now().strftime("%Y%m%d%H%M%S")
     if not msg:
         abort(400, description="Debe enviar su mensaje en el body del POST, por ejemplo: curl -X POST -d 'mensaje' url.")
     #print("MENSAJE DE CONTACTO: " + str(msg))
@@ -103,11 +103,11 @@ def contacto():
     to_mail = os.environ.get("TO_MAIL")
     password = os.environ.get("PASSWORD")
     # Envio del mensaje por mail
-    send_mail_gmail(from_mail, password, to_mail, "Mensaje API CV", msg)
+    #send_mail_gmail(from_mail, password, to_mail, "Mensaje API CV", msg)
     return "Gracias por su mensaje."
 
 # Main
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8080, debug=False)
 
