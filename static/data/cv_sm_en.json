@@ -1,0 +1,89 @@
+{
+    "names": "Santiago Ezequiel",
+    "surnames": "Menendez",
+    "residence": "Argentina",
+    "experience": [
+        {
+            "position": "Data Engineer",
+            "company": "Uala Argentina",
+            "since": "September 2021",
+            "until": "Present",
+            "description": "Im joined to Ualá in september 2021 as Data Engineer for the Data proyect, working with AWS, Python, RDS and GitHub."
+        },
+        {
+            "position": "Data Engineer",
+            "company": "Ergo Renova",
+            "since": "January 2019",
+            "until": "September 2021",
+            "description": "I’m worked in the following projects:\n-Movistar: Maintain of process, load of data and sources, modeling and analytics using Hadoop, Bash, Python, Spark, Git and Teradata SQL.\n-Gire: Load of sources from social media, modeling, analytics, machine learning and insights using Python, PL/SQL and Data Science.\n-Telecom: Migration and load of sources to cloud with GCP using Python, DataFlow, Kafka and Hadoop."
+        }
+    ],
+    "education": {
+        "grade": "University",
+        "career": "Computer Engineer",
+        "institute/organization": "Universidad Nacional de La Matanza",
+        "since": "2016",
+        "until": "Present",
+        "description": "",
+        "subjects": "24/44"
+    },
+    "skills": [
+        "Adaptable to new changes and new technologies",
+        "Teamwork experience",
+        "Responsibility",
+        "Autodidact"
+    ],
+    "technologies": {
+        "programming_languages": [
+            "Python",
+            "Bash",
+            "Java SE",
+            "C",
+            "C++",
+            "Javascript"
+        ],
+        "cloud": [
+            "AWS",
+            "GCP"
+        ],
+        "databases": [
+            "MySQL",
+            "PostresSQL",
+            "Hadoop/Hive",
+            "Teradata",
+            "Oracle SQL/PL SQL",
+            "MongoDB"
+        ],
+        "web": [
+            "HTML5",
+            "CSS",
+            "Django",
+            "NodeJS",
+            "API Rest"
+        ],
+        "office": [
+            "Word",
+            "Excel",
+            "PowerPoint"
+        ],
+        "others": [
+            "Git",
+            "PowerBI"
+        ]
+    },
+    "interestings": [
+        "Python",
+        "APIs",
+        "Big Data",
+        "Machine Learning",
+        "Linux",
+        "GitHub",
+        "Desarrollo Web",
+        "Desarrollo Backend"
+    ],
+    "contacts_networks": {
+        "github": "https://github.com/santimenendez19",
+        "linkedin": "https://www.linkedin.com/in/menendezsantiago",
+        "portfolio": "In developing"
+    }
+}
