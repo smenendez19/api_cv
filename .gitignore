@@ -1,4 +1,3 @@
-__pycache__/
-virtenv/
-.vscode/
+__pycache__
+.vscode
 .env

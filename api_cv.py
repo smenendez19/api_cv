@@ -2,21 +2,28 @@
 
 # Fuente de donde se baso: https://programando-python.github.io/posts/la-api-de-tu-curriculum-vitae/
 
-# Modulos
+# Imports
 
 from flask import Flask, request, jsonify
 import os
-import sys
 import json
 
-# Inicio de aplicacion y configuraciones
+# Start
 
 app = Flask(__name__)
+
+# Configs
+
 app.config['JSON_AS_ASCII'] = False
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 app.config['JSON_SORT_KEYS'] = False
 
-# Rutas
+# Paths
+
+PATH_STATIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+PATH_DATA = os.path.join(PATH_STATIC, "data")
+
+# Endpoints
 
 @app.route('/')
 def index():
@@ -39,14 +46,14 @@ def get_cv_info():
     else:
         language = language.upper()
     if language == "ES":
-        url_cv = request.host_url + "static/pdf/cv_sm.pdf"
-        cv_info = os.path.join(os.path.dirname(sys.argv[0]), "static", "data", "cv_sm.json")
+        url_cv_pdf = request.host_url + "static/pdf/CV_ES.pdf"
+        cv_data_path = os.path.join(PATH_DATA, "cv_data_es.json")
     elif language == "EN":
-        url_cv = request.host_url + "static/pdf/cv_sm_en.pdf"
-        cv_info = os.path.join(os.path.dirname(sys.argv[0]), "static", "data", "cv_sm_en.json")
-    cv = json.load(open(cv_info))
-    cv["url_cv"] = url_cv
-    return jsonify(cv)
+        url_cv_pdf = request.host_url + "static/pdf/CV_EN.pdf"
+        cv_data_path = os.path.join(PATH_DATA, "cv_data_en.json")
+    cv_data = json.load(open(cv_data_path))
+    cv_data["url_cv_pdf"] = url_cv_pdf
+    return jsonify(cv_data)
 
 # Main
 

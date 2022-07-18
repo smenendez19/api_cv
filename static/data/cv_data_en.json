@@ -1,0 +1,147 @@
+{
+    "names": "Santiago Ezequiel",
+    "surnames": "Menendez",
+    "residence": "Argentina",
+    "experience": [
+        {
+            "position": "Tutor",
+            "company": "CoderHouse",
+            "since": "March 2022",
+            "until": "Present",
+            "description": "Im joined to CoderHouse in march 2022 as a tutor for the Python and Django courses of the company."
+        },
+        {
+            "position": "Data Engineer",
+            "company": "Uala Argentina",
+            "since": "September 2021",
+            "until": "Present",
+            "description": "Im joined to Ualá in september 2021 as Data Engineer for the Data proyect, working with AWS, Python, RDS and GitHub."
+        },
+        {
+            "position": "Data Engineer",
+            "company": "Ergo Renova",
+            "since": "January 2019",
+            "until": "September 2021",
+            "description": "I'm worked in the following projects:\n-Movistar: Maintain of process, load of data and sources, modeling and analytics using Hadoop, Bash, Python, Spark, Git and Teradata SQL.\n-Gire: Load of sources from social media, modeling, analytics, machine learning and insights using Python, PL/SQL and Data Science.\n-Telecom: Migration and load of sources to cloud with GCP using Python, DataFlow, Kafka and Hadoop."
+        }
+    ],
+    "education": {
+        "grade": "University",
+        "career": "Computer Engineer",
+        "institute/organization": "Universidad Nacional de La Matanza",
+        "since": "2016",
+        "until": "Present",
+        "description": "",
+        "subjects": "27/44"
+    },
+    "skills": [
+        "Adaptable to new changes and new technologies",
+        "Teamwork experience",
+        "Responsibility",
+        "Self learning",
+        "Organization"
+    ],
+    "technologies": {
+        "programming_languages": [
+            "Python",
+            "Javascript",
+            "Bash",
+            "Java",
+            "C",
+            "Go"
+        ],
+        "cloud": [
+            "AWS",
+            "GCP"
+        ],
+        "databases": [
+            "MySQL",
+            "PostresSQL",
+            "Hadoop",
+            "Teradata",
+            "Oracle SQL",
+            "MongoDB",
+            "BigQuery"
+        ],
+        "web": [
+            "HTML5",
+            "CSS",
+            "Django",
+            "NodeJS",
+            "API Rest",
+            "Vue",
+            "Vite"
+        ],
+        "office": [
+            "Word",
+            "Excel",
+            "PowerPoint"
+        ],
+        "others": [
+            "Git",
+            "Docker",
+            "Kubernetes",
+            "Github Actions",
+            "Github Pages",
+            "Machine Learning",
+            "Vercel",
+            "Heroku"
+        ]
+    },
+    "interestings": [
+        "Python Development",
+        "Machine Learning",
+        "Web Development"
+    ],
+    "courses": [
+        {
+            "course": "Professional Data Engineer",
+            "company": "Google Cloud",
+            "since": "Agosto 2021",
+            "until": "Agosto 2024",
+            "description": "Certificado de Data Cloud Engineer en Google Cloud",
+            "url": "https://www.credential.net/6c88d297-1283-4132-b112-690ed7707579"
+        },
+        {
+            "course": "Aprende lenguaje GO (GOLANG) desde 0",
+            "company": "Udemy",
+            "since": "Mayo 2022",
+            "description": "Curso de GOLANG desde cero en Udemy",
+            "url": "https://www.udemy.com/certificate/UC-2576e1e2-d55e-4d78-9c1c-c17a0336dcd9/"
+        },
+        {
+            "course": "The Complete Hands-On Introduction to Apache Airflow",
+            "company": "Udemy",
+            "since": "Diciembre 2021",
+            "description": "Curso de Airflow introductorio",
+            "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-3099ee67-ad8f-4986-ad47-43ac92e52b89.pdf"
+        },
+        {
+            "course": "AWS Essentials",
+            "company": "Udemy",
+            "since": "Octubre 2021",
+            "description": "Curso de AWS introductorio",
+            "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-c98f07e3-d535-425a-9edc-141c8f79a3b9.pdf"
+        },
+        {
+            "course": "Desarrollo Backend Node.js",
+            "company": "IncluIT",
+            "since": "Septiembre 2021",
+            "description": "Curso de NodeJS"
+        },
+        {
+            "course": "DBT Fundamentals",
+            "company": "DBT Labs",
+            "since": "Mayo 2022",
+            "until": "Mayo 2024",
+            "description": "Curso introductorio de DBT",
+            "url": "https://www.credential.net/8143fa1e-e72a-4543-b676-45903f8d7567"
+        }
+    ],
+    "contacts_networks": {
+        "github": "https://github.com/santimenendez19",
+        "linkedin": "https://www.linkedin.com/in/menendezsantiago",
+        "portfolio": "https://santimenendez19.github.io/portfolio",
+        "email": "santiagomenendez@outlook.com"
+    }
+}
