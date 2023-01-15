@@ -1,5 +1,9 @@
 # Cambios en esta version
 
+## v1.2.0
+
+- Actualizado a 2023
+
 ## v1.1.0
 
 - Se quitaron los archivos de replit debido a que se usara Vercel para alojar la API.
